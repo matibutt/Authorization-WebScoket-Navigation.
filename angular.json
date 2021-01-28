@@ -39,7 +39,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -119,6 +118,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "thd-app"
+    }
+  },
+  "defaultProject": "thd-app",
+  "cli": {
+    "analytics": "a1cb2a17-1fd9-4bf6-8f7b-3525a63bde55"
+  }
 }
