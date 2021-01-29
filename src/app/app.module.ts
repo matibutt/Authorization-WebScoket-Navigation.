@@ -41,6 +41,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { ChatComponent } from './chat/chat.component';
+import { EventgridComponent } from './eventgrid/eventgrid.component';
 
 
 
@@ -65,6 +66,7 @@ import { ChatComponent } from './chat/chat.component';
     MultiLanguageComponent,
     SignInComponent,
     ChatComponent,
+    EventgridComponent,
 
 
   ],
