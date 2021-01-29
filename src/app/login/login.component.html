@@ -1,0 +1,27 @@
+<div class="container">
+    <div fxLayoutAlign="center center" fxFlexFill class="main-div">
+      <mat-card >
+        <mat-toolbar color="secondary">{{'cLogin' | translate}}</mat-toolbar>
+        
+        <form class="example-form" fxLayoutAlign="stretch" fxLayout="column"  [formGroup]="loginForm" (ngSubmit)="onSubmit()"  >
+          <mat-form-field class="example-full-width">
+            <input class="input-label" matInput placeholder="{{'cLoginFormLabels.email' | translate }}"  formControlName="email"  />
+            <mat-error *ngIf="loginForm.controls.email.hasError('required') "> Email is required.</mat-error>
+            <mat-error *ngIf="loginForm.controls.email.hasError('email')"> Email is invalid.</mat-error>
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <input matInput  type="password" placeholder="{{'cpasswordTextLabel' | translate }}" formControlName="password"  autocomplete="on" />
+            <mat-error *ngIf="loginForm.controls.password.hasError('required')"> password is required.</mat-error>
+            <mat-icon matSuffix>vpn_key</mat-icon>
+          </mat-form-field>
+          <button mat-raised-button color="secondary" [disabled]="!loginForm.valid" type="submit" >{{'cLogin' | translate }}  </button>
+        </form>
+        <div id="formFooter" fxLayoutAlign="center center">
+          <a class="underlineHover" routerLink = "/signIn"> {{'cquestionLogin' | translate }} </a>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  
