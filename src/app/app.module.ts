@@ -6,11 +6,13 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChatComponent } from './chat/chat.component';
+import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChatComponent
+    ChatComponent,
+    PhotoGalleryComponent
   ],
   imports: [
     BrowserModule,
