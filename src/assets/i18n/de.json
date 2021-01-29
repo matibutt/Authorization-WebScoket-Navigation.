@@ -1,0 +1,27 @@
+{
+  "languageView": "Sprache",
+  "currentLanguage": "Deutsch",
+  "cStartText": "Willkommen!",
+  "cRooms": "Räume",
+  "cRoomsText": "Räume funktionieren",
+  "cNavigation": "Navigation",
+  "cNavigationText": "Navigation funktioniert",
+  "cEvents": "Veranstaltungen",
+  "cEventsText": "Veranstaltungen funktioniert",
+  "cLogin": "Anmeldung",
+  "cLoginFormLabels.email": "Geben sie ihre E-Mail Adresse.",
+  "cLoginFormLabels.email.hasEmailError": "Geben Sie hier eine gültige E-Mail-Adresse ein",
+  "cLoginFormLabels.email.hasEmailRequired": "Geben Sie hier Ihre E-Mail-Adresse ein",
+
+  "cLogoutText": "Ausloggen",
+
+
+
+  "cpasswordTextLabel" : "Geben Sie Ihr Passwort ein",
+  "cpasswordLabel.hasRequiredError" : "Geben Sie hier Ihre Passwort ein",
+
+  "cquestionLogin" : "Sie haben noch keinen Account?",
+
+  "cChatText": "Plaudern funktionieren",
+  "cChat": "Plaudern"
+}
