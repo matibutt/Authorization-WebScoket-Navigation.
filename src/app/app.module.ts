@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChatComponent } from './chat/chat.component';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
+import { InternationalComponent } from './international/international.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChatComponent,
-    PhotoGalleryComponent
+    PhotoGalleryComponent,
+    InternationalComponent
   ],
   imports: [
     BrowserModule,
