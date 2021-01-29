@@ -22,6 +22,9 @@ import { MatButtonModule} from '@angular/material/button';
 import { MatCardModule} from '@angular/material/card';
 import { MatGridListModule} from '@angular/material/grid-list';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
+<<<<<<< HEAD
+import { InternationalComponent } from './international/international.component';
+=======
 import {LeafletModule} from '@asymmetrik/ngx-leaflet';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
@@ -44,6 +47,7 @@ import { ChatComponent } from './chat/chat.component';
 
 
 
+>>>>>>> ac474a36673374ba193a038b4fe82b4d3fffccf9
 
 @NgModule({
   declarations: [
@@ -65,8 +69,13 @@ import { ChatComponent } from './chat/chat.component';
     MultiLanguageComponent,
     SignInComponent,
     ChatComponent,
+<<<<<<< HEAD
+    PhotoGalleryComponent,
+    InternationalComponent
+=======
 
 
+>>>>>>> ac474a36673374ba193a038b4fe82b4d3fffccf9
   ],
   imports: [
     BrowserModule,
