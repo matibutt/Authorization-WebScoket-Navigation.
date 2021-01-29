@@ -1,0 +1,42 @@
+<div class="container">
+  <div fxLayoutAlign="center center" fxFlexFill class="main-div">
+      <mat-toolbar color="secondary">SignIn</mat-toolbar>
+      <form class="example-form" fxLayoutAlign="stretch" [formGroup]="signInForm" fxLayout="column"  (ngSubmit)= "onSubmit()">
+        <mat-form-field class="example-full-width">
+          <input class="input-label" matInput placeholder="Enter User name here"  formControlName="username"  />
+          <mat-error *ngIf="signInForm.controls.username.hasError('required') "> Username is required.</mat-error>
+          <mat-error *ngIf="signInForm.controls.username.hasError('Invalid') "> Username is taken.</mat-error>
+          <mat-icon matSuffix> person</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input class="input-label" matInput placeholder="Enter your Email here"  formControlName= "email"  />
+          <mat-error *ngIf="signInForm.controls.email.hasError('required') "> Email is required.</mat-error>
+          <mat-error *ngIf="signInForm.controls.email.hasError('email')"> Email is invalid.</mat-error>
+          <mat-icon matSuffix>email</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input  formControlName="password" matInput placeholder="Enter your password here" type="password" autocomplete="on" />
+          <mat-error *ngIf="signInForm.controls.password.hasError('required') "> Password is required.</mat-error>
+          <mat-icon matSuffix>vpn_key</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input formControlName="confirm_password" matInput placeholder="Enter your password again" type="password" autocomplete="on" />
+          <mat-error *ngIf="signInForm.controls.confirm_password.hasError('passValidator') "> Password must matched.</mat-error>
+          <mat-icon matSuffix>vpn_key</mat-icon>
+        </mat-form-field>
+
+        <button mat-raised-button color="secondary" [disabled]="signInForm.invalid" type="submit" > SignIn </button>
+      </form>
+
+      <div id="formFooter" fxLayoutAlign="center center">
+        <a class="underlineHover" routerLink = "/login">Already have an Account?</a>
+      </div>
+  </div>
+</div>
+
+
+
+
