@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UserRegisterService } from './services/user-register.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'thd-app';
+  constructor( public userRegister: UserRegisterService) { }
+
 }

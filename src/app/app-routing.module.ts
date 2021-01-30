@@ -11,6 +11,7 @@ import { InternationalComponent } from './international/international.component'
 const routes: Routes = [{path: '', redirectTo: '/Home', pathMatch:'full'},
                         {path: 'International', component: InternationalComponent},
                         {path: 'Home', component: EventgridComponent},
+                        {path: 'login', component: LoginComponent},
                         {path: 'Navigation', component: HappyMapComponent},
                         {path: 'login', component: LoginComponent},
                         {path: 'singIn', component: SignInComponent},
