@@ -1,0 +1,28 @@
+{
+  "languageView": "Language",
+  "currentLanguage": "English",
+  "cStartText": "Welcome!",
+  "cRooms": "Rooms",
+  "cRoomsText": "Rooms works",
+  "cNavigation": "Navigation",
+  "cNavigationText": "Navigation works",
+  "cEvents": "Events",
+  "cEventsText": "Events works",
+  "cLogin": "Login",
+  "cLoginFormLabels.email": "Enter Your Email",
+  "cLoginFormLabels.email.hasEmailError": "Enter valid Email Address here",
+  "cLoginFormLabels.email.hasEmailRequired": "Enter your Email Address here",
+
+  "cLogoutText": "Logout",
+
+  "cpasswordTextLabel" : "Type your password",
+  "cpasswordLabel.hasRequiredError" : "Type your password here.",
+
+  "cquestionLogin" : "Don't have an Account?",
+
+  "cChatText": "Chat works",
+  "cChat": "Chat"
+
+
+
+}
