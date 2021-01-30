@@ -17,21 +17,21 @@ import { FlexLayoutModule} from '@angular/flex-layout';
 import { MatMenuModule} from '@angular/material/menu';
 import { MatIconModule} from '@angular/material/icon';
 import { MatDividerModule} from '@angular/material/divider';
-//import { LoadingScreenInterceptor } from "./loading-screen/loading-screen.interceptor";
+
 import { MatButtonModule} from '@angular/material/button';
 import { MatCardModule} from '@angular/material/card';
 import { MatGridListModule} from '@angular/material/grid-list';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import {LeafletModule} from '@asymmetrik/ngx-leaflet';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-//import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
+
 //import { NavBarComponent } from './nav-bar/nav-bar.component';
 import {NominatimService} from './services/nominatim.service';
 import { HappyMapComponent } from './happy-map/happy-map.component';
 import { GeocodingComponent } from './geocoding/geocoding.component';
 import { MapComponent } from './map/map.component';
 import { MapPointFormComponent } from './map-point-form/map-point-form.component';
-//import { ResultListComponent } from './result-list/result-list.component';
+
 import { ResultsListComponent } from './results-list/results-list.component';
 import { InternationalComponent } from './international/international.component';
 import { MarqueeComponent } from './marquee/marquee.component';
@@ -49,17 +49,15 @@ import { EventgridComponent } from './eventgrid/eventgrid.component';
 @NgModule({
   declarations: [
     AppComponent,
-   // XyzComponent,
+    //XyzComponent,
     routingComponents,
     PhotoGalleryComponent,
-    //LoadingScreenComponent,
     MarqueeComponent,
-   // NavBarComponent,
+    //NavBarComponent,
     HappyMapComponent,
     GeocodingComponent,
     MapComponent,
     MapPointFormComponent,
-    //ResultListComponent,
     ResultsListComponent,
     InternationalComponent,
     LoginComponent,
