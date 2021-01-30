@@ -1,0 +1,17 @@
+#map {
+    margin-top:50px;
+    height: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  #details-panel {
+    text-align: left;
+    top:auto;
+  }
+  
+  .leaflet-bottom, .leaflet-left {
+    pointer-events: auto;
+  }
+  
+  
