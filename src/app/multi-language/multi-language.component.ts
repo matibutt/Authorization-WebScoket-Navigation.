@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 
+interface Languages {
+  value: string;
+  viewValue: string;
+}
 
 @Component({
   selector: 'app-multi-language',

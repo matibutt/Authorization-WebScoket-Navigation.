@@ -9,7 +9,7 @@ import "leaflet/dist/leaflet.css";
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { XyzComponent } from './xyz/xyz.component';
+//import { XyzComponent } from './xyz/xyz.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule} from '@angular/material/toolbar';
@@ -17,21 +17,21 @@ import { FlexLayoutModule} from '@angular/flex-layout';
 import { MatMenuModule} from '@angular/material/menu';
 import { MatIconModule} from '@angular/material/icon';
 import { MatDividerModule} from '@angular/material/divider';
-import { LoadingScreenInterceptor } from "./loading-screen/loading-screen.interceptor";
+//import { LoadingScreenInterceptor } from "./loading-screen/loading-screen.interceptor";
 import { MatButtonModule} from '@angular/material/button';
 import { MatCardModule} from '@angular/material/card';
 import { MatGridListModule} from '@angular/material/grid-list';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import {LeafletModule} from '@asymmetrik/ngx-leaflet';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+//import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
+//import { NavBarComponent } from './nav-bar/nav-bar.component';
 import {NominatimService} from './services/nominatim.service';
 import { HappyMapComponent } from './happy-map/happy-map.component';
 import { GeocodingComponent } from './geocoding/geocoding.component';
 import { MapComponent } from './map/map.component';
 import { MapPointFormComponent } from './map-point-form/map-point-form.component';
-import { ResultListComponent } from './result-list/result-list.component';
+//import { ResultListComponent } from './result-list/result-list.component';
 import { ResultsListComponent } from './results-list/results-list.component';
 import { InternationalComponent } from './international/international.component';
 import { MarqueeComponent } from './marquee/marquee.component';
@@ -49,17 +49,17 @@ import { EventgridComponent } from './eventgrid/eventgrid.component';
 @NgModule({
   declarations: [
     AppComponent,
-    XyzComponent,
+   // XyzComponent,
     routingComponents,
     PhotoGalleryComponent,
-    LoadingScreenComponent,
+    //LoadingScreenComponent,
     MarqueeComponent,
-    NavBarComponent,
+   // NavBarComponent,
     HappyMapComponent,
     GeocodingComponent,
     MapComponent,
     MapPointFormComponent,
-    ResultListComponent,
+    //ResultListComponent,
     ResultsListComponent,
     InternationalComponent,
     LoginComponent,
@@ -97,11 +97,7 @@ import { EventgridComponent } from './eventgrid/eventgrid.component';
 
   ],
   exports: [ ReactiveFormsModule],
-  providers: [{
-    provide: HTTP_INTERCEPTORS,
-    useClass: LoadingScreenInterceptor,
-    multi: true
-  },NominatimService],
+  providers: [NominatimService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
