@@ -13,7 +13,12 @@
   "cLoginFormLabels.email.hasEmailError": "Enter valid Email Address here",
   "cLoginFormLabels.email.hasEmailRequired": "Enter your Email Address here",
 
-  "cLogoutText": "Logout",
+
+  "cHome": "Home",
+  "cInternational": "Internationales Office",
+  "cchat": "Chat",
+  "cAdmin": "Admin",
+  "cHeading": "Deggendorf institute of technology has decided to extend the study period for all students due to the ongoing COVID-19 pandemic. For Further Reference, see the Primuss Portal",
 
   "cpasswordTextLabel" : "Type your password",
   "cpasswordLabel.hasRequiredError" : "Type your password here.",
