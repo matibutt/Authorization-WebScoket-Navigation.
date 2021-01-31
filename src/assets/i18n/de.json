@@ -15,6 +15,12 @@
 
   "cLogoutText": "Ausloggen",
 
+  "cHome": "Startseite",
+  "cInternational": "Internationales Büro",
+
+  "cchat": "Chat",
+  "cAdmin": "Admin",
+  "cHeading": "Das Technologische Institut Deggendorf hat beschlossen, die Studienzeit für alle Studierenden aufgrund der anhaltenden COVID-19-Pandemie zu verlängern. Weitere Informationen finden Sie im Primuss-Portal",
 
 
   "cpasswordTextLabel" : "Geben Sie Ihr Passwort ein",

@@ -14,7 +14,7 @@ interface Languages {
 export class MultiLanguageComponent implements OnInit {
 
   ngOnInit(): void {
-    console.log("MultiLanguageComponent OnInit: "+ this.translate.currentLang);
+    console.log("MultiLanguageComponent OnInit: " + this.translate.currentLang);
     switch(this.translate.currentLang){
       case 'de':
         this.langView = 'Sprache'
