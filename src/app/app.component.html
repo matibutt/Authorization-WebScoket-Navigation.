@@ -10,21 +10,22 @@
 
       <div style="float: right;" fxShow="true" fxHide.lt-md>
         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-
+        <a routerLink="Home" mat-button>Home</a>
         <a routerLink="International" mat-button>International Office</a>
-        <a routerLink="Navigation" *ngIf="userRegister.loggedIn()" mat-button>Navigation</a>
-        <a href="#" mat-button>Admin</a>
+        <a routerLink="Navigation"  mat-button>Navigation</a>
+        <a href="#" *ngIf="userRegister.loggedIn()" mat-button>Admin</a>
         <a routerLink="/chat" *ngIf="userRegister.loggedIn()" mat-button>Chat</a>
         <a routerLink= "/login" mat-button>Login</a>
         </div>
 
         <div style="float: right;" fxHide fxShow.lt-md fxHide.xs>
           <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+          <a routerLink="Home" mat-button><mat-icon class="material-icons-rounded" >home</mat-icon></a>
           <a routerLink="International" mat-button><mat-icon class="material-icons-rounded" >work</mat-icon></a>
           <a routerLink="Navigation" mat-button><mat-icon class="material-icons-rounded" >location_on</mat-icon></a>
-          <a href="#" mat-button><mat-icon class="material-icons-rounded" >today</mat-icon></a>
-          <a href="#" mat-button><mat-icon class="material-icons-rounded" >assignment_ind</mat-icon></a>
-          <a href="#" mat-button><mat-icon class="material-icons-rounded" >home</mat-icon></a>
+          <a href="#" *ngIf="userRegister.loggedIn()" mat-button><mat-icon class="material-icons-rounded" >today</mat-icon></a>
+          <a routerLink="/chat" *ngIf="userRegister.loggedIn()" mat-button><mat-icon class="material-icons-rounded" >sms</mat-icon></a>
+          <a routerLink= "/login" mat-button><mat-icon class="material-icons-rounded" >assignment_ind</mat-icon></a>
           </div>
 
     </mat-toolbar-row>
@@ -35,15 +36,18 @@
     <mat-sidenav #sidenav mode="over">
       <mat-nav-list>
         <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
-        <a routerLink="International" mat-list-item>International Office</a>
-        <a routerLink="Navigation" mat-list-item>Navigation</a>
-        <a href="#" mat-list-item>Admin</a>
-        <a href="#" mat-list-item>Chat</a>
-        <a href="#" mat-list-item>Login</a>
+        <a (click)="sidenav.toggle()" routerLink="Home" mat-list-item>Home</a>
+        <a (click)="sidenav.toggle()" routerLink="International" mat-list-item>International Office</a>
+        <a (click)="sidenav.toggle()" routerLink="Navigation" mat-list-item>Navigation</a>
+        <a (click)="sidenav.toggle()" href="#" *ngIf="userRegister.loggedIn()" mat-list-item>Admin</a>
+        <a (click)="sidenav.toggle()" routerLink="/chat" *ngIf="userRegister.loggedIn()" mat-list-item>Chat</a>
+        <a (click)="sidenav.toggle()" routerLink= "/login" mat-list-item>Login</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
-      <div class="contains-router-out"><router-outlet></router-outlet></div><router-outlet></router-outlet>
+      <div class="contains-router-out">
+        <router-outlet></router-outlet>
+      </div>
       </mat-sidenav-content>
     </mat-sidenav-container>
 </div>
