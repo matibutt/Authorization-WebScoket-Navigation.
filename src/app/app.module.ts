@@ -17,7 +17,7 @@ import { FlexLayoutModule} from '@angular/flex-layout';
 import { MatMenuModule} from '@angular/material/menu';
 import { MatIconModule} from '@angular/material/icon';
 import { MatDividerModule} from '@angular/material/divider';
-
+import {MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule} from '@angular/material/button';
 import { MatCardModule} from '@angular/material/card';
 import { MatGridListModule} from '@angular/material/grid-list';
@@ -42,6 +42,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { ChatComponent } from './chat/chat.component';
 import { EventgridComponent } from './eventgrid/eventgrid.component';
+import { Login2Component } from './login2/login2.component';
+import { Singup2Component } from './singup2/singup2.component';
 
 
 
@@ -65,6 +67,8 @@ import { EventgridComponent } from './eventgrid/eventgrid.component';
     SignInComponent,
     ChatComponent,
     EventgridComponent,
+    Login2Component,
+    Singup2Component,
 
 
   ],
@@ -75,6 +79,7 @@ import { EventgridComponent } from './eventgrid/eventgrid.component';
     FormsModule,
     ReactiveFormsModule,
     LeafletModule,
+    MatDialogModule,
     MatCarouselModule.forRoot(),
     BrowserAnimationsModule,
     MatToolbarModule,
