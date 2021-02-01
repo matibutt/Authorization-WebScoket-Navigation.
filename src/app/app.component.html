@@ -15,7 +15,7 @@
         <a routerLink="Navigation"  mat-button>{{'cNavigation' | translate }}</a>
         <a href="#" *ngIf="userRegister.loggedIn()" mat-button>{{'cAdmin' | translate }}</a>
         <a routerLink="/chat" *ngIf="userRegister.loggedIn()" mat-button>{{'cchat' | translate }}</a>
-        <a routerLink= "/login" mat-button>{{'cLogin' | translate }}</a>
+        <a mat-button (click)="on_create()">{{'cLogin' | translate }}</a>
         </div>
 
         <div style="float: right;" fxHide fxShow.lt-md fxHide.xs>
@@ -25,7 +25,7 @@
           <a routerLink="Navigation" mat-button><mat-icon class="material-icons-rounded" >location_on</mat-icon></a>
           <a href="#" *ngIf="userRegister.loggedIn()" mat-button><mat-icon class="material-icons-rounded" >today</mat-icon></a>
           <a routerLink="/chat" *ngIf="userRegister.loggedIn()" mat-button><mat-icon class="material-icons-rounded" >sms</mat-icon></a>
-          <a routerLink= "/login" mat-button><mat-icon class="material-icons-rounded" >assignment_ind</mat-icon></a>
+          <a routerLink= "/login2" mat-button><mat-icon class="material-icons-rounded" >assignment_ind</mat-icon></a>
           </div>
 
     </mat-toolbar-row>
