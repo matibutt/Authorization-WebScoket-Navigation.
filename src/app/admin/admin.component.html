@@ -1,0 +1,57 @@
+<div class="container">
+  <div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card >
+       <div class="col-sm-12">
+      <div class="jumbotron">
+          <h1 class="display-4">Hello Admin, {{username}} !</h1>
+
+          <h4>Events Table</h4>
+          <table name="eventTable" class="table table-bordered">
+            <thead class="thead-dark">
+              <th scope="col">Sr.#</th>
+              <th scope="col">Organiser</th>
+              <th scope="col">Title</th>
+              <th scope="col">Venue</th>
+              <th scope="col">Desciption</th>
+              <th scope="col">Actions</th>
+            </thead>
+            <tr *ngFor = "let event of eventList; let i = index">
+              <td> {{ i + 1 }} </td>
+              <td> {{ event.name }} </td>
+              <td> {{ event.title }} </td>
+              <td> {{ event.venue }} </td>
+              <td> {{ event.description }} </td>
+              <td >
+                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon" (click)= "onDeleteEvent(event._id)" >
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </td>
+            </tr>
+          </table>
+
+          <h4>Users List Table</h4>
+          <table name="userTable" class="table table-bordered">
+            <thead class="thead-dark">
+              <th scope="col">Sr.#</th>
+              <th scope="col">UserName</th>
+              <th scope="col">Email</th>
+              <th scope="col">Password</th>
+              <th scope="col">Actions</th>
+            </thead>
+            <tr *ngFor = "let user of userList; let i = index">
+              <td> {{ i + 1 }} </td>
+              <td> {{ user.username }} </td>
+              <td> {{ user.email }} </td>
+              <td> {{ user.password }} </td>
+              <td>
+                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon" (click)= "onDeleteUser(user._id)">
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+  </div>
+    </mat-card>
+  </div>
+</div>

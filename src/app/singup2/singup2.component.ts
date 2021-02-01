@@ -79,6 +79,7 @@ export class Singup2Component implements OnInit {
         error => {
           alert('Please fill the form correctly.');
         });    // console.log(JSON.stringify(this.cdregisterForm.value));
+        this.onClose();
   }
 
   onClose(){

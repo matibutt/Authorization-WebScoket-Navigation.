@@ -1,12 +1,15 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
+
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserRegisterService {
 
-  constructor(private httpService: HttpClient) { }
+  constructor(private httpService: HttpClient, private router: Router ) { }
 
   register(body: any){
     return this.httpService.post('http://localhost:3000/users/register', body, {
@@ -15,12 +18,17 @@ export class UserRegisterService {
     });
   }
 
+
   login(body: any){
     return this.httpService.post('http://localhost:3000/users/login', body, {
       observe: 'body',
       withCredentials: true,
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
+  }
+  logout(){
+    localStorage.removeItem('token');
+    this.router.navigateByUrl('Home');
   }
 
   getUserName() {

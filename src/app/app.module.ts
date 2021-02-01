@@ -1,3 +1,5 @@
+import { AuthGuard } from './guard/auth.guard';
+import { UserRegisterService } from './services/user-register.service';
 import { I18nModule } from './i18n/i18n.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -44,6 +46,12 @@ import { ChatComponent } from './chat/chat.component';
 import { EventgridComponent } from './eventgrid/eventgrid.component';
 import { Login2Component } from './login2/login2.component';
 import { Singup2Component } from './singup2/singup2.component';
+import { UserComponent } from './user/user.component';
+import { AdminComponent } from './admin/admin.component';
+import { ChatWSService } from './services/chat-ws.service';
+import { Admin1Component } from './admin1/admin1.component';
+
+
 
 
 
@@ -69,6 +77,10 @@ import { Singup2Component } from './singup2/singup2.component';
     EventgridComponent,
     Login2Component,
     Singup2Component,
+    UserComponent,
+    AdminComponent,
+    Admin1Component,
+
 
 
   ],
@@ -100,7 +112,7 @@ import { Singup2Component } from './singup2/singup2.component';
 
   ],
   exports: [ ReactiveFormsModule],
-  providers: [NominatimService],
+  providers: [NominatimService, UserRegisterService, AuthGuard, ChatWSService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

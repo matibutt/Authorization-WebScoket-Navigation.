@@ -1,4 +1,3 @@
-import { Event } from './../class/event.model';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 

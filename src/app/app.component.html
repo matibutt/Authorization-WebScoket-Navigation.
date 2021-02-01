@@ -10,12 +10,13 @@
 
       <div style="float: right;" fxShow="true" fxHide.lt-md>
         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-        <a routerLink="Home" mat-button>{{'cHome' | translate }}</a>
-        <a routerLink="International" mat-button>{{'cInternational' | translate }}</a>
-        <a routerLink="Navigation"  mat-button>{{'cNavigation' | translate }}</a>
-        <a href="#" *ngIf="userRegister.loggedIn()" mat-button>{{'cAdmin' | translate }}</a>
-        <a routerLink="/chat" *ngIf="userRegister.loggedIn()" mat-button>{{'cchat' | translate }}</a>
-        <a mat-button (click)="on_create()">{{'cLogin' | translate }}</a>
+        <a routerLink="Home" routerLinkActive = "active" mat-button>{{'cHome' | translate }}</a>
+        <a routerLink="International" routerLinkActive = "active" mat-button>{{'cInternational' | translate }}</a>
+        <a routerLink="Navigation" routerLinkActive = "active"  mat-button>{{'cNavigation' | translate }}</a>
+        <a routerLink="admin" *ngIf="userRegister.loggedIn()" routerLinkActive = "active" mat-button>{{'cAdmin' | translate }}</a>
+        <a routerLink="/chat" routerLinkActive = "active" *ngIf="userRegister.loggedIn()" mat-button>{{'cchat' | translate }}</a>
+        <a style="cursor: pointer;" *ngIf="userRegister.loggedIn()" (click) = "userRegister.logout()" mat-button> {{'cLogoutText' | translate }}</a>
+        <a mat-button *ngIf="!userRegister.loggedIn()"  (click)="on_create()">{{'cLogin' | translate }}</a>
         </div>
 
         <div style="float: right;" fxHide fxShow.lt-md fxHide.xs>
@@ -29,9 +30,9 @@
           </div>
 
     </mat-toolbar-row>
-    
+
   </mat-toolbar>
-  
+
   <mat-sidenav-container style="height: 100%;" >
     <mat-sidenav #sidenav mode="over">
       <mat-nav-list>

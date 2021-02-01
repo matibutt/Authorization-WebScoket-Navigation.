@@ -10,7 +10,7 @@ import { Login2Component } from './login2/login2.component';
 })
 export class AppComponent {
   title = 'thd-app';
-  constructor( public userRegister: UserRegisterService, private dialog:MatDialog) { }
+  constructor( public userRegister: UserRegisterService, private dialog: MatDialog) { }
 
   on_create(){
     const dialogconfig = new MatDialogConfig();

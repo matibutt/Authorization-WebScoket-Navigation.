@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card >
+       <div class="col-sm-12">
+      <div class="jumbotron">
+          <h1 class="display-4">Hello, {{username}} !
+
+          </h1>
+          <table class="table">
+            <thead class="thead-dark">
+              <th scope="col">Organiser</th>
+              <th scope="col">Title</th>
+              <th scope="col">Venue</th>
+              <th scope="col">Desciption</th>
+            </thead>
+            <tr *ngFor = "let event of eventList">
+              <td> {{ event.name }} </td>
+              <td> {{ event.title }} </td>
+              <td> {{ event.venue }} </td>
+              <td> {{ event.description }} </td>
+            </tr>
+          </table>
+          <button type="button" class="btn btn-danger" (click) = "logout()">logout</button>
+
+        </div>
+  </div>
+    </mat-card>
+  </div>
+</div>

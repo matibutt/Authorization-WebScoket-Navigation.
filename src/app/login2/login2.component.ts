@@ -14,10 +14,10 @@ import { Singup2Component } from '../singup2/singup2.component';
 
 export class Login2Component {
 
- 
+
   loginForm: FormGroup;
 
-  constructor( private router: Router, 
+  constructor( private router: Router,
       private userService: UserRegisterService,
       private dialog:MatDialog,
       public dialogRef : MatDialogRef<Login2Component>  ) {}
@@ -39,11 +39,9 @@ export class Login2Component {
     }
     this.userService.login(JSON.stringify(this.loginForm.value))
     .subscribe(
-      data => {console.log(data); localStorage.setItem('token', data.toString()); this.router.navigate(['/International']); },
-      error => {}
-      );
-
-      this.onClose(); 
+      (data) => {localStorage.setItem('token', data.toString()); this.router.navigateByUrl('International'); },
+      (error) => {this.router.navigateByUrl('login2'); });
+      this.onClose();
   }
 
   onClose(){
